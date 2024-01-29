@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Flexbox</title>
+  <style>
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      background-color: blanchedalmond;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery > div {
+      margin: 10px;
+      position: relative;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      display: none;
+    }
+
+    .gallery div.active img {
+      display:block;
+    }
+
+    .gallery div.active button {
+      display: none;
+    }
+
+    .gallery button {
+      display: block;
+      margin-top: 5px;
+      padding: 10px 15px;
+      background-color: green;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer ;
+    }
+
+    .gallery button:hover {
+      background-color: green;
+    }
+  </style>
+  <script>
+    function showPhoto(btn) {
+      var parentDiv = btn.parentNode;
+      parentDiv.classList.toggle("active");
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>CSS FlexBox</h1>
+    <div class="gallery">
+      <div>
+        <img src="1.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="2.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="3.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="4.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="5.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="6.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="7.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="8.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="9.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="10.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="11.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="12.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="13.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="14.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="15.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="16.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="17.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="18.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="19.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+      <div>
+        <img src="20.jpg">
+        <button onclick="showPhoto(this)">View Photo</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
